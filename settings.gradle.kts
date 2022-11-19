@@ -1,1 +1,1 @@
-rootProject.name = "springboot-kotlin-service"
+rootProject.name = "${{ values.name }}"

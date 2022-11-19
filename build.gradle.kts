@@ -12,7 +12,7 @@ jacoco {
     toolVersion = "0.8.7"
 }
 
-group = "com.thoughtworks.x.hello"
+group = "${{ values.javaPackage }}"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
@@ -40,7 +40,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "11"
+        jvmTarget = "${{ values.javaVersion }}"
     }
 }
 
