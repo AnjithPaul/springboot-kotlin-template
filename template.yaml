@@ -96,7 +96,7 @@ spec:
           javaVersion: ${{ parameters.javaVersion }}
           javaPackage: ${{ parameters.javaPackage | replace(".","/")}}
           version: ${{ parameters.version }}
-          shell destination: ${{ parameters.repoUrl | parseRepoUrl }}
+          destination: ${{ parameters.repoUrl | parseRepoUrl }}
 
     # This step publishes the contents of the working directory to GitHub.
     - id: publish
