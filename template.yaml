@@ -62,7 +62,7 @@ spec:
         version:
           title: Version
           type: string
-          description: Owner of componenet
+          description: Artifact version
           ui:autofocus: true
           ui:options:
             rows: 5
