@@ -60,13 +60,12 @@ spec:
           ui:options:
             rows: 5
         version:
-          title: Owner
+          title: Version
           type: string
           description: Owner of componenet
-          default: 0.0.1-SNAPSHOT
           ui:autofocus: true
-            ui:options:
-              rows: 5
+          ui:options:
+            rows: 5
 
     - title: Choose a location
       required:
