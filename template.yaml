@@ -94,6 +94,7 @@ spec:
           owner: ${{ parameters.owner }}
           javaVersion: ${{ parameters.javaVersion }}
           javaPackage: ${{ parameters.javaPackage }}
+          version: ${{ parameters.version }}
 
     # This step publishes the contents of the working directory to GitHub.
     - id: publish
