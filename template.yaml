@@ -63,6 +63,7 @@ spec:
           title: Version
           type: string
           description: Artifact version
+          default: 0.0.1-SNAPSHOT
           ui:autofocus: true
           ui:options:
             rows: 5
@@ -93,7 +94,7 @@ spec:
           description: ${{ parameters.description }}
           owner: ${{ parameters.owner }}
           javaVersion: ${{ parameters.javaVersion }}
-          javaPackage: ${{ parameters.javaPackage }}
+          javaPackage: ${{ parameters.javaPackage | replace(".","/")}}
           version: ${{ parameters.version }}
 
     # This step publishes the contents of the working directory to GitHub.
